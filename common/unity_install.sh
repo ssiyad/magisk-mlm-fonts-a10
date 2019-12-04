@@ -3,6 +3,7 @@
 
 ui_print "  "
 ui_print "  "
+ui_print "   F o r    A n d r o i d    1 0   "
 ui_print "# #  #  #    #  # #  #  #    #  # #"
 ui_print "### # # #   # # # # # # #   # # ###"
 ui_print "### ### #   ###  #  ### #   ### ###"
@@ -145,10 +146,12 @@ case $SELECTION in
 esac
 
 if [ ! -z $SELECTION ]; then
-  cp -rf $TMPDIR/fonts/$FONT_BOLD.ttf $TMPDIR/system/fonts/NotoSansMalayalam-Bold.ttf
-  cp -rf $TMPDIR/fonts/$FONT_REGULAR.ttf $TMPDIR/system/fonts/NotoSansMalayalam-Regular.ttf
-  cp -rf $TMPDIR/fonts/$FONT_UI_BOLD.ttf $TMPDIR/system/fonts/NotoSansMalayalamUI-Bold.ttf
-  cp -rf $TMPDIR/fonts/$FONT_UI_REGULAR.ttf $TMPDIR/system/fonts/NotoSansMalayalamUI-Regular.ttf
+  cp -rf $TMPDIR/fonts/$FONT_BOLD.otf $TMPDIR/system/fonts/NotoSansMalayalam-Bold.otf
+  cp -rf $TMPDIR/fonts/$FONT_REGULAR.otf $TMPDIR/system/fonts/NotoSansMalayalam-Regular.otf
+  cp -rf $TMPDIR/fonts/$FONT_REGULAR.otf $TMPDIR/system/fonts/NotoSansMalayalam-Medium.otf
+  cp -rf $TMPDIR/fonts/$FONT_UI_BOLD.otf $TMPDIR/system/fonts/NotoSansMalayalamUI-Bold.otf
+  cp -rf $TMPDIR/fonts/$FONT_UI_REGULAR.otf $TMPDIR/system/fonts/NotoSansMalayalamUI-Regular.otf
+  cp -rf $TMPDIR/fonts/$FONT_UI_REGULAR.otf $TMPDIR/system/fonts/NotoSansMalayalamUI-Medium.otf
   ui_print "  Done!"
 else
   ui_print "  Nothing to Install!"
